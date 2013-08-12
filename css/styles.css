@@ -117,12 +117,6 @@ li {
     width: 100%;
 }
 
-li>a.tappable-active {
-    color: #fff;
-    background-color: #4286f5;
-}
-
-
 li>a {
     color: #000;
     display: block;
@@ -195,4 +189,9 @@ h2 {
     bottom: 0px;
     left: 0px;
     right: 0px;
+}
+
+li>a.tappable-active {
+    color: #fff;
+    background-color: #4286f5;
 }
