@@ -1,0 +1,16 @@
+html,body{margin:0;padding:0;}
+		
+body{
+	font:12px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height:1.5em;
+	color:#FF0;
+	background:#000;		
+	}	
+	
+.highlight {
+	color:#FF0;
+	background:grey;		
+
+}
+
+	
