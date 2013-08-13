@@ -14,16 +14,17 @@ body {
 }
 
 .header {
-    background: #666;
+    background: #ccc;
     -webkit-background-size: 1px 44px;
     -moz-background-size: 1px 44px;
     -ms-background-size: 1px 44px;
     -o-background-size: 1px 44px;
     background-size: 1px 44px;
-    height: 44px;
-    line-height: 44px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
     width: 100%;
-    color: #fff;
+    color: #ff0;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
     border-bottom: solid 1px #eee;
