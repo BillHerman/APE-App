@@ -1,6 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<script>
+
+var diameter;
+var wall;
+var length;
+var result1;
+var result2;
+
+function myCalculate()
+{
+diameter = document.getElementById('diameter').value;
+wall = document.getElementById('wall').value;
+length = document.getElementById('length').value;
+
+if (diameter == "" || wall == "" ||length == ""){
+	alert("Some inputs are blank");
+	}
+else
+	{
+	result1 = (diameter - wall) * wall * 10.69;
+	result2 = result1 * length;
+	document.getElementById("weight1").innerHTML=result1;
+	document.getElementById("weight2").innerHTML=result2;
+	}
+}
+
+function myClear(){
+	document.getElementById('diameter').value="";
+	document.getElementById('wall').value=""
+	document.getElementById('length').value="";
+	document.getElementById("weight1").innerHTML="";
+	document.getElementById("weight2").innerHTML="";
+	}
+
+</script>
+
 <meta charset="utf-8" />
 <title>APE Pile Calculator</title>
 
@@ -8,7 +45,6 @@
 
 </head>
 <body>
-
 
 <table width="100%">
 <tr>
@@ -27,17 +63,17 @@
 <p>APE Pile Calculator - Steel piles</p>	  
 
 <table width="60%">
-<tr><td align="left" width="80%">Diameter in inches:</td><td><input size="10" type=text name="diameter"></td></tr>
-<tr><td align="left" width="80%">Wall thickness in inches:</td><td><input size="10" type=text name="wall"></td></tr>
-<tr><td align="left" width="80%">Length in feet:</td><td><input size="10" type=text name="length"></td></tr>
-<tr><td align="left" width="80%">Weight / foot in lbs.</td><td><p div="weight1"></p></td></tr>
-<tr><td align="left" width="80%">Pile total weight in lbs.</td><td><p div="weight2"></p></td></tr>
+<tr><td align="left" width="80%">Diameter in inches:</td><td><input size="10" type=text name="diameter" id="diameter"></td></tr>
+<tr><td align="left" width="80%">Wall thickness in inches:</td><td><input size="10" type=text name="wall" id="wall"></td></tr>
+<tr><td align="left" width="80%">Length in feet:</td><td><input size="10" type=text name="length" id="length"></td></tr>
+<tr><td align="left" width="80%">Weight / foot in lbs.</td><td><p id="weight1"></p></td></tr>
+<tr><td align="left" width="80%">Pile total weight in lbs.</td><td><p id="weight2"></p></td></tr>
 </table>
 
 <br>
 
 <table width="60%">
-<tr><td width="50%"><button class="buttons">Calculate</button></td><td width="50%"><button class="buttons">Clear</button></td></tr>
+<tr><td width="50%"><button class="buttons" onclick="myCalculate()">Calculate</button></td><td width="50%"><button class="buttons" onclick="myClear()">Clear</button></td></tr>
 </table>
 
 <br>
