@@ -1,7 +1,7 @@
 html,body{margin:0;padding:0;}
 		
 body{
-	font:30px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font:20px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	line-height:1.5em;
 	color:#FF0;
 	background:#000;		
@@ -14,7 +14,7 @@ body{
 }
 
 .buttons {
-	font:30px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font:20px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color:#000;
 }
 	
