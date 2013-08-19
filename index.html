@@ -62,19 +62,18 @@ function myClear(){
 
 <p>APE Pile Calculator - Steel piles</p>	  
 
-<table width="60%">
-<tr><td align="left" width="80%">Diameter in inches:</td><td><input size="10" type=text name="diameter" id="diameter"></td></tr>
-<tr><td align="left" width="80%">Wall thickness in inches:</td><td><input size="10" type=text name="wall" id="wall"></td></tr>
-<tr><td align="left" width="80%">Length in feet:</td><td><input size="10" type=text name="length" id="length"></td></tr>
-<tr><td align="left" width="80%">Weight / foot in lbs.</td><td><p id="weight1"></p></td></tr>
-<tr><td align="left" width="80%">Pile total weight in lbs.</td><td><p id="weight2"></p></td></tr>
+<table width="90%" height="90%" border="1">
+<tr><td align="left" width="50%">Diameter in inches:</td><td><input type=text name="diameter" id="diameter"></td></tr>
+<tr><td align="left" width="50%">Wall thickness in inches:</td><td><input type=text name="wall" id="wall"></td></tr>
+<tr><td align="left" width="50%">Length in feet:</td><td><input type=text name="length" id="length"></td></tr>
+<tr><td align="left" width="50%">Weight / foot in lbs.</td><td><p id="weight1"></p></td></tr>
+<tr><td align="left" width="50%">Pile total weight in lbs.</td><td><p id="weight2"></p></td></tr>
+<tr></tr>
+<tr><td width="50%" valign="left"><button class="buttons" onclick="myCalculate()">Calculate</button></td><td width="50%" valign="right"><button class="buttons" onclick="myClear()">Clear</button></td></tr>
 </table>
 
 <br>
 
-<table width="60%">
-<tr><td width="50%"><button class="buttons" onclick="myCalculate()">Calculate</button></td><td width="50%"><button class="buttons" onclick="myClear()">Clear</button></td></tr>
-</table>
 
 <br>
 
