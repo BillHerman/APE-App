@@ -4,8 +4,6 @@
         id          = "com.apevibro.APE"
         versionCode = "10"
         version     = "1.1.0">
-
-<preference name="orientation" value="portrait" / > 
  
     <name>APE Pile Calculator</name>
  
@@ -18,4 +16,6 @@
     </author>
  
 </widget>
+
+
 
