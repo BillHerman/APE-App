@@ -5,24 +5,22 @@
 
 <script>
 
-var diameter;
-var wall;
+var side;
 var length;
 var result1;
 var result2;
 
 function myCalculate()
 {
-diameter = document.getElementById('diameter').value;
-wall = document.getElementById('wall').value;
+side = document.getElementById('side').value;
 length = document.getElementById('length').value;
 
-if (diameter == "" || wall == "" ||length == ""){
+if (side == "" || length == ""){
 	alert("Some inputs are blank");
 	}
 else
 	{
-	result1 = (diameter - wall) * wall * 10.69;
+	result1 = size * side * 10.69;
 	result2 = result1 * length;
 	document.getElementById("weight1").innerHTML=result1;
 	document.getElementById("weight2").innerHTML=result2;
@@ -30,8 +28,7 @@ else
 }
 
 function myClear(){
-	document.getElementById('diameter').value="";
-	document.getElementById('wall').value=""
+	document.getElementById('side').value="";
 	document.getElementById('length').value="";
 	document.getElementById("weight1").innerHTML="";
 	document.getElementById("weight2").innerHTML="";
@@ -48,15 +45,23 @@ function myClear(){
 <body>
 
 <table width="100%" align="middle">
+
 <tr>
 <td width="35%" class="highlight" colspan=3>APE Pile Calculator</td>
 </tr>
 
 <tr>
-<td width="35%" align="center">Steel</td>
-<td width="35%" class="highlight" align="center"><a href="index.html">Concrete</a></td>
-<td width="35%" align="center">Locations</td>
+<td width="35%" align="center"><a class="unlight" href="index.html">Steel</a></td>
+<td width="35%" class="highlight" align="center">Concrete</td>
+<td width="35%" align="center"><a class="unlight" href="map.html">Locations</a></td>
 </tr>
+
+<tr>
+<td width="35%" align="center"><a class="unlight" href="concrete1.html">Round Pile</a></td>
+<td width="35%" class="highlight" align="center">Square Pile</td>
+<td width="35%" align="center"><a class="unlight" href="concrete3.html">Octagonal Pile</a></td>
+</tr>
+
 </table>
 	  
 <div align="center">
@@ -64,8 +69,7 @@ function myClear(){
 <p>APE Pile Calculator - Concrete piles</p>	  
 
 <table width="90%" height="90%">
-<tr><td align="left">Diameter in inches:</td><td width="20%"><input type=text size="10" name="diameter" id="diameter"></td></tr>
-<tr><td align="left">Wall thickness in inches:</td width="20%"><td><input type=text  size="10" name="wall" id="wall"></td></tr>
+<tr><td align="left">One side in inches:</td><td width="20%"><input type=text size="10" name="side" id="side"></td></tr>
 <tr><td align="left">Length in feet:</td><td width="20%"><input type=text size="10" name="length" id="length"></td></tr>
 <tr><td align="left">Weight / foot in lbs.</td><td width="20%"><p id="weight1"></p></td></tr>
 <tr><td align="left">Pile total weight in lbs.</td><td width="20%"><p id="weight2"></p></td></tr>

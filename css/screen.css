@@ -13,6 +13,12 @@ body{
 
 }
 
+.unlight {
+	text-decoration: none;
+	color:#FF0;
+	background:#000;		
+}
+
 .buttons {
 	font:30px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color:#000;
