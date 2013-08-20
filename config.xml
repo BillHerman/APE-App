@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.WRHEnterprises.APE"
+        id          = "com.apevibro.APE"
         versionCode = "10"
         version     = "1.1.0">
+
+<preference name="orientation" value="portrait" / > 
  
     <name>APE Pile Calculator</name>
  
@@ -11,17 +13,9 @@
         American Piledriving Equipment pile calculator
     </description>
  
-    <author href="http://www.willcode4food.net" email="wrherman@comcast.net">
-        Bill Herman
+    <author href="http://www.apevibro.com" email="joshg@apevibro.com">
+        Josh Greisen
     </author>
- 
-    <feature name="http://api.phonegap.com/1.0/camera"/>
-    <feature name="http://api.phonegap.com/1.0/contacts"/>
-    <feature name="http://api.phonegap.com/1.0/file"/>
-    <feature name="http://api.phonegap.com/1.0/geolocation"/>
-    <feature name="http://api.phonegap.com/1.0/media"/>
-    <feature name="http://api.phonegap.com/1.0/network"/>
-    <feature name="http://api.phonegap.com/1.0/notification"/>
  
 </widget>
 
