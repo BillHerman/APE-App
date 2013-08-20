@@ -2,42 +2,6 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, user-scalable=no, target-densitydpi=device-dpi">
-	
-<script>
-
-var diameter;
-var wall;
-var length;
-var result1;
-var result2;
-
-function myCalculate()
-{
-diameter = document.getElementById('diameter').value;
-wall = document.getElementById('wall').value;
-length = document.getElementById('length').value;
-
-if (diameter == "" || wall == "" ||length == ""){
-	alert("Some inputs are blank");
-	}
-else
-	{
-	result1 = (diameter - wall) * wall * 10.69;
-	result2 = result1 * length;
-	document.getElementById("weight1").innerHTML=result1;
-	document.getElementById("weight2").innerHTML=result2;
-	}
-}
-
-function myClear(){
-	document.getElementById('diameter').value="";
-	document.getElementById('wall').value=""
-	document.getElementById('length').value="";
-	document.getElementById("weight1").innerHTML="";
-	document.getElementById("weight2").innerHTML="";
-	}
-
-</script>
 
 <meta charset="utf-8" />
 <title>APE Pile Calculator</title>
@@ -48,6 +12,7 @@ function myClear(){
 <body>
 
 <table width="100%" align="middle">
+
 <tr>
 <td width="35%" class="highlight" colspan=3>APE Pile Calculator</td>
 </tr>
@@ -57,17 +22,18 @@ function myClear(){
 <td width="35%" align="center"><a class="unlight" href="concrete1.html">Concrete</a></td>
 <td width="35%" class="highlight" align="center">Locations</td>
 </tr>
+
 </table>
 
 <div align="center">
 	<h3>North America Locations Map</h3>
     <div style="margin: 15px">
-    	<iframe width="400" height="250" style="border: 1px solid #000000;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msid=217036671226186349317.00049168bf2b17b305676&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=42.163403,-98.964844&amp;spn=32.479412,70.224609&amp;z=4&amp;output=embed"></iframe>
+    	<iframe width="500" height="300" style="border: 1px solid #000000;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msid=217036671226186349317.00049168bf2b17b305676&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=42.163403,-98.964844&amp;spn=32.479412,70.224609&amp;z=4&amp;output=embed"></iframe>
     </div>
     
 	<h3>World Locations Map</h3>
     <div style="margin: 15px">
-        <iframe width="400" height="250" style="border: 1px solid #000000;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=100315069597287071726.00049168bf2b17b305676&amp;ll=36.738884,58.007813&amp;spn=68.172715,140.625&amp;z=3&amp;output=embed"></iframe>
+        <iframe width="500" height="300" style="border: 1px solid #000000;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=100315069597287071726.00049168bf2b17b305676&amp;ll=36.738884,58.007813&amp;spn=68.172715,140.625&amp;z=3&amp;output=embed"></iframe>
     </div>
 </div>
    
