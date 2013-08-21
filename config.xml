@@ -14,7 +14,7 @@
     <author href="http://www.apevibro.com" email="joshg@apevibro.com">
         Josh Greisen
     </author>
-    <icon src="icon.png" />
+    <icon src="images/icon.png" />
     <preference name="orientation"                value="portrait" /> 
 </widget>
 
