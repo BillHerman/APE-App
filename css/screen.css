@@ -24,3 +24,12 @@ body{
 	color:#000;
 }
 
+.input {
+    -webkit-appearance: none;
+    height: 50px;
+    background-color:#FFF;
+    color:#666;
+    font-weight:bold;
+    border: solid #666 1px;
+    font-size: 14px;
+}
