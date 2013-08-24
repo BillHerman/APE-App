@@ -24,6 +24,8 @@ else
 	{
 	result1 = (outer - inner) * inner * 10.69;
 	result2 = result1 * length;
+	result1 = result1.toFixed(2);
+	result2 = result2.toFixed(2);
 	document.getElementById("weight1").innerHTML=result1;
 	document.getElementById("weight2").innerHTML=result2;
 	}
@@ -72,9 +74,9 @@ function myClear(){
 <p>APE Pile Calculator - Concrete piles</p>	  
 
 <table width="90%" height="90%">
-<tr><td align="left">Outer diameter in inches:</td><td width="20%"><input type=text size="10" name="outer" id="outer"></td></tr>
-<tr><td align="left">Inner diameter in inches:</td width="20%"><td><input type=text  size="10" name="inner" id="inner"></td></tr>
-<tr><td align="left">Length in feet:</td><td width="20%"><input type=text size="10" name="length" id="length"></td></tr>
+<tr><td align="left">Outer diameter in inches:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="outer"></td></tr>
+<tr><td align="left">Inner diameter in inches:</td width="20%"><td width="20%" align="center"><input size="10" class="input" type="number" id="inner"></td></tr>
+<tr><td align="left">Length in feet:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="length"></td></tr>
 <tr><td align="left">Weight / foot in lbs.</td><td width="20%"><p id="weight1"></p></td></tr>
 <tr><td align="left">Pile total weight in lbs.</td><td width="20%"><p id="weight2"></p></td></tr>
 <tr><td align="center"><button class="buttons" onclick="myCalculate()">Calculate</button></td><td width="20%" align="center"><button class="buttons" onclick="myClear()">Clear</button></td></tr>

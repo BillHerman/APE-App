@@ -12,6 +12,7 @@ var result2;
 
 function myCalculate()
 {
+
 side = document.getElementById('side').value;
 length = document.getElementById('length').value;
 
@@ -20,11 +21,14 @@ if (side == "" || length == ""){
 	}
 else
 	{
-	result1 = size * side * 10.69;
+	result1 = side * side * 10.69;
 	result2 = result1 * length;
+	result1 = result1.toFixed(2);
+	result2 = result2.toFixed(2);
 	document.getElementById("weight1").innerHTML=result1;
 	document.getElementById("weight2").innerHTML=result2;
 	}
+
 }
 
 function myClear(){
@@ -69,8 +73,8 @@ function myClear(){
 <p>APE Pile Calculator - Concrete piles</p>	  
 
 <table width="90%" height="90%">
-<tr><td align="left">One side in inches:</td><td width="20%"><input type=text size="10" name="side" id="side"></td></tr>
-<tr><td align="left">Length in feet:</td><td width="20%"><input type=text size="10" name="length" id="length"></td></tr>
+<tr><td align="left">One side in inches:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="side"></td></tr>
+<tr><td align="left">Length in feet:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="length"></td></tr>
 <tr><td align="left">Weight / foot in lbs.</td><td width="20%"><p id="weight1"></p></td></tr>
 <tr><td align="left">Pile total weight in lbs.</td><td width="20%"><p id="weight2"></p></td></tr>
 <tr><td align="center"><button class="buttons" onclick="myCalculate()">Calculate</button></td><td width="20%" align="center"><button class="buttons" onclick="myClear()">Clear</button></td></tr>
