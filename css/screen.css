@@ -27,6 +27,7 @@ body{
 .input {
     -webkit-appearance: none;
     height: 50px;
+	width: 100px;
     background-color:#FFF;
     color:#666;
     font-weight:bold;
