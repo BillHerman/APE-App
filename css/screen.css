@@ -1,11 +1,21 @@
-html,body{margin:0;padding:0;}
-		
-body{
+@charset "utf-8";
+/* CSS Document */
+/* Body Styles  */
+* 								{ margin: 0;/*Sticky Footer*/ padding: 0;/*Sticky Footer*/ outline: none; }
+body > #wrap 					{ height: auto;/*Sticky Footer*/ min-height: 100%;/*Sticky Footer*/ width: 100%; min-width: 1230px; position: relative; overflow: auto; 
+
+}
+html, #wrap 					{ height: 100%; width: 100%; /*Sticky Footer*/ min-width: 1230px; 
 	font:30px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	line-height:2.5em;
 	color:#FF0;
 	background:#000;		
-	}	
+
+}
+.ie8 #wrap 						{ display: table; height:100%; width:100%; }
+
+#main							{ overflow: auto; min-width: 1230px; min-height: 850px; padding: 0 0 65px 0; position: relative; width: 1230px; margin: auto; text-align: center; z-index: 0; /*Sticky Footer*/ }	
+
 	
 .highlight {
 	color:#FF0;
