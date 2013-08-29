@@ -1,0 +1,13 @@
+.bottom
+{
+position:absolute;
+bottom:0px;
+}
+
+.middle
+{
+position:absolute;
+vertical-align: middle;
+height:100%;
+}
+
