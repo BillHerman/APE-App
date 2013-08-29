@@ -1,20 +1,9 @@
 @charset "utf-8";
-/* CSS Document */
-/* Body Styles  */
-* 								{ margin: 0;/*Sticky Footer*/ padding: 0;/*Sticky Footer*/ outline: none; }
-body > #wrap 					{ height: auto;/*Sticky Footer*/ min-height: 100%;/*Sticky Footer*/ width: 100%; min-width: 160px; position: relative; overflow: auto; 
 
-}
-html, #wrap 					{ height: 100%; width: 100%; /*Sticky Footer*/ min-width: 160px; 
-	font:30px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	line-height:2.5em;
-	color:#FF0;
-	background:#000;		
-
-}
-
-#main							{ overflow: auto; min-width: 160px; min-height: 160px; padding: 0 0 25px 0; position: relative; width: 160px; margin: auto; text-align: center; z-index: 0; /*Sticky Footer*/ }	
-
+*				{ margin: 0; padding: 0; outline: none; color:#FF0;	background:#000; font:30px "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+body > #wrap 	{ height: auto; min-height: 100%; width: 100%; min-width: 320px; position: relative; overflow: auto; }
+html, #wrap 	{ height: 100%; width: 100%; min-width: 320px;}
+#main			{ overflow: auto; min-width: 320px; min-height: 320px; position: relative; width: 320px; height: 320px; margin: auto; text-align: center; z-index: 0; }	
 	
 .highlight {
 	color:#FF0;
