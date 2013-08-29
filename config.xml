@@ -15,7 +15,9 @@
         Josh Greisen
     </author>
     <icon src="images/icon.png" />
-    <preference name="orientation"                value="portrait" /> 
+    <preference name="orientation" value="portrait" /> 
+    <preference name="EnableViewportScale" value="true" />
+
 </widget>
 
 
