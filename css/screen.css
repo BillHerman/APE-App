@@ -14,7 +14,7 @@ html, #wrap 					{ height: 100%; width: 100%; /*Sticky Footer*/ min-width: 160px
 }
 .ie8 #wrap 						{ display: table; height:100%; width:100%; }
 
-#main							{ overflow: auto; min-width: 160px; min-height: 320px; padding: 0 0 65px 0; position: relative; width: 160px; margin: auto; text-align: center; z-index: 0; /*Sticky Footer*/ }	
+#main							{ overflow: auto; min-width: 160px; min-height: 160px; padding: 0 0 25px 0; position: relative; width: 160px; margin: auto; text-align: center; z-index: 0; /*Sticky Footer*/ }	
 
 	
 .highlight {
