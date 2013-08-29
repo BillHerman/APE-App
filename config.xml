@@ -17,6 +17,7 @@
     <icon src="images/icon.png" />
     <preference name="orientation" value="portrait" /> 
     <preference name="EnableViewportScale" value="true" />
+    <preference name="target-device" value="handset" />
 
 </widget>
 
