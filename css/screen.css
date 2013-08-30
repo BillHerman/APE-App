@@ -2,20 +2,18 @@
 *				{ margin: 0; padding: 0; outline: none; color:blue;	background:#000; font:1.1em "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
 
 .highlight {
-	color:#FF0;
 	background:grey;		
-
-}
+	text-decoration: none;
+	}
 
 .unlight {
+	background:black;		
 	text-decoration: none;
-	color:#FF0;
-	background:#000;		
-}
+	}
 
 .buttons {
 	color:#000;
-	background: gray;
+	background:grey;
 }
 
 .input {
@@ -23,15 +21,7 @@
     height: 30px;
 	width: 100px;
     background-color:#FFF;
-    color:#666;
     font-weight:bold;
-}
-
-
-.bottom
-{
-position:absolute;
-bottom:0px;
 }
 
 .middle

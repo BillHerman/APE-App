@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, user-scalable=no, target-densitydpi=device-dpi">
+<meta name="viewport" content="height=device-height, initial-scale=0.5, maximum-scale=0.5, user-scalable=no, target-densitydpi=device-dpi">
 
 <script>
 
@@ -42,6 +42,7 @@ function myClear(){
 <title>APE Pile Calculator</title>
 
 <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/iphone.css" type="text/css" media="screen and (max-width: 480px)"  />
 
 </head>
 <body>
@@ -64,13 +65,15 @@ function myClear(){
 <td width="35%" class="highlight" align="center">Octagonal</td>
 </tr>
 
+<tr>
+<td colspan="3" align="center" class="unlight">APE Pile Calculator - Concrete piles</td>
+</tr>
+
 </table>
 	  
 <div align="center">
 
-<p>APE Pile Calculator - Concrete piles</p>	  
-
-<table width="90%" height="90%">
+<table  class="middle">
 <tr><td align="left">One side in inches:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="side"></td></tr>
 <tr><td align="left">Length in feet:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="length"></td></tr>
 <tr><td align="left">Weight / foot in lbs.</td><td width="20%"><p id="weight1"></p></td></tr>
