@@ -49,7 +49,7 @@ function myClear(){
 
 </head>
 <body>
-<table width="100%" align="middle">
+<table class="middle" border="1">
 
 <tr>
 <td width="35%" class="highlight" colspan=3>APE Pile Calculator</td>
@@ -71,20 +71,14 @@ function myClear(){
 <td colspan="3" align="center" class="unlight">APE Pile Calculator - Concrete piles</td>
 </tr>
 
+<tr><td colspan="2">Outer diameter in inches:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="outer"></td></tr>
+<tr><td colspan="2">Inner diameter in inches:</td width="20%"><td width="20%" align="center"><input size="10" class="input" type="number" id="inner"></td></tr>
+<tr><td colspan="2">Length in feet:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="length"></td></tr>
+<tr><td colspan="2">Weight / foot in lbs.</td><td width="20%"><p id="weight1"></p></td></tr>
+<tr><td colspan="2">Pile total weight in lbs.</td><td width="20%"><p id="weight2"></p></td></tr>
+<tr><td colspan="2" align="center"><button class="buttons" onclick="myCalculate()">Calculate</button></td><td width="20%" align="center"><button class="buttons" onclick="myClear()">Clear</button></td></tr>
+<tr><td colspan="3" align="center"><img src="images/ape_gorilla_with_ape_small_black.png"></td></tr>
 </table>
-	  
-<div align="center">
-
-<table class="middle">
-<tr><td align="left">Outer diameter in inches:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="outer"></td></tr>
-<tr><td align="left">Inner diameter in inches:</td width="20%"><td width="20%" align="center"><input size="10" class="input" type="number" id="inner"></td></tr>
-<tr><td align="left">Length in feet:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="length"></td></tr>
-<tr><td align="left">Weight / foot in lbs.</td><td width="20%"><p id="weight1"></p></td></tr>
-<tr><td align="left">Pile total weight in lbs.</td><td width="20%"><p id="weight2"></p></td></tr>
-<tr><td align="center"><button class="buttons" onclick="myCalculate()">Calculate</button></td><td width="20%" align="center"><button class="buttons" onclick="myClear()">Clear</button></td></tr>
-<tr><td colspan="2" align="center"><img src="images/ape_gorilla_with_ape_small_black.png"></td></tr>
-</table>
-</div>
 
 </body>
 </html>

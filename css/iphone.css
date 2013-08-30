@@ -1,5 +1,5 @@
 @charset "utf-8";
-*				{ margin: 0; padding: 0; outline: none; color:green; background:#000; font:0.7 em "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+*				{ margin: 0; padding: 0; outline: none; color:green; background:#000; font:12px "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
 
 .highlight {
 	background:grey;		
@@ -13,23 +13,24 @@
 
 .buttons {
 	color:#000;
+	font:12px;
 	background:grey;
 }
 
 .input {
     -webkit-appearance: none;
-    height: 30px;
-	width: 100px;
+    height: 20px;
+	width: 50px;
     background-color:#FFF;
-    font-weight:bold;
 }
 
 .middle
 {
+border:1;
 position:absolute;
 vertical-align: middle;
 horizontal-align:middle;
-height:90%;
+height:100%;
 width:100%;
 align:center;
 }
