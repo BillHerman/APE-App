@@ -19,7 +19,7 @@
 
 .input {
     -webkit-appearance: none;
-    height: 25px;
+    height: 20px;
 	width: 50px;
     background-color:#FFF;
 }
@@ -39,5 +39,6 @@ align:center;
 {
 height:20%;
 width:20%;
+align:center;
 }
 
