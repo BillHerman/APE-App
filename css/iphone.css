@@ -1,0 +1,46 @@
+@charset "utf-8";
+*				{ margin: 0; padding: 0; outline: none; color:green; background:#000; font:1.1em "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+
+.highlight {
+	color:#FF0;
+	background:grey;		
+
+}
+
+.unlight {
+	text-decoration: none;
+	color:#FF0;
+	background:#000;		
+}
+
+.buttons {
+	color:#000;
+	background: gray;
+}
+
+.input {
+    -webkit-appearance: none;
+    height: 30px;
+	width: 100px;
+    background-color:#FFF;
+    color:#666;
+    font-weight:bold;
+}
+
+
+.bottom
+{
+position:absolute;
+bottom:0px;
+}
+
+.middle
+{
+position:absolute;
+vertical-align: middle;
+horizontal-align:middle;
+height:90%;
+width:100%;
+align:center;
+}
+
