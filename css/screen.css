@@ -4,11 +4,13 @@
 .highlight {
 	background:grey;		
 	text-decoration: none;
+	min-height:50px;
 	}
 
 .unlight {
 	background:black;		
 	text-decoration: none;
+	min-height:50px;
 	}
 
 .buttons {
