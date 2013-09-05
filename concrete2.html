@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="viewport" content="height=device-height, initial-scale=0.5, maximum-scale=0.5, user-scalable=no, target-densitydpi=device-dpi">
 
 <script>
 
@@ -71,8 +70,8 @@ function myClear(){
 <td colspan="3" align="center" class="unlight">APE Pile Calculator - Concrete piles</td>
 </tr>
 
-<tr><td colspan="2">One side in inches:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="side"></td></tr>
-<tr><td colspan="2">Length in feet:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="length"></td></tr>
+<tr><td colspan="2">One side in inches:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="side" value="" onkeydown="ForceNumericInput(this, true, false)"></td></tr>
+<tr><td colspan="2">Length in feet:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="length" value="" onkeydown="ForceNumericInput(this, true, false)"></td></tr>
 <tr><td colspan="2">Weight / foot in lbs.</td><td width="20%"><p id="weight1"></p></td></tr>
 <tr><td colspan="2">Pile total weight in lbs.</td><td width="20%"><p id="weight2"></p></td></tr>
 <tr><td colspan="2" align="center"><button class="buttons" onclick="myCalculate()">Calculate</button></td><td width="20%" align="center"><button class="buttons" onclick="myClear()">Clear</button></td></tr>

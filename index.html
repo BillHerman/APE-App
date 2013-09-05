@@ -12,6 +12,8 @@ var result2;
 function myCalculate()
 {
 diameter = document.getElementById('diameter').value;
+
+
 wall = document.getElementById('wall').value;
 length = document.getElementById('length').value;
 
@@ -29,6 +31,8 @@ else
 	}
 }
 
+
+
 function myClear(){
 	document.getElementById('diameter').value="";
 	document.getElementById('wall').value=""
@@ -38,6 +42,8 @@ function myClear(){
 	}
 
 </script>
+
+<script src="js/JavascriptForceNumericInput.js"></script>
 
 <meta charset="utf-8" />
 <title>APE Pile Calculator</title>
@@ -64,9 +70,9 @@ function myClear(){
 <td colspan="3" align="center" class="unlight">APE Pile Calculator - Steel piles</td>
 </tr>
 
-<tr><td colspan="2">Diameter in inches:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="diameter"></td></tr>
-<tr><td colspan="2">Wall thickness in inches:</td width="20%"><td width="20%" align="center"><input size="10" class="input" type="number" id="wall"></td></tr>
-<tr><td colspan="2">Length in feet:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="length"></td></tr>
+<tr><td colspan="2">Diameter in inches:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="diameter" value="" onkeydown="ForceNumericInput(this, true, false)"></td></tr>
+<tr><td colspan="2">Wall thickness in inches:</td width="20%"><td width="20%" align="center"><input size="10" class="input" type="number" id="wall" value="" onkeydown="ForceNumericInput(this, true, false)"></td></tr>
+<tr><td colspan="2">Length in feet:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="length" value="" onkeydown="ForceNumericInput(this, true, false)"></td></tr>
 <tr><td colspan="2">Weight / foot in lbs.</td><td width="20%"><p id="weight1"></p></td></tr>
 <tr><td colspan="2">Pile total weight in lbs.</td><td width="20%"><p id="weight2"></p></td></tr>
 <tr><td colspan="2" align="center"><button class="buttons" onclick="myCalculate()">Calculate</button></td><td width="20%" align="center"><button class="buttons" onclick="myClear()">Clear</button></td></tr>
