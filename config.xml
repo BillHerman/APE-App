@@ -15,7 +15,7 @@
         Josh Greisen
     </author>
     <icon src="images/icon.png" />
-
+    <preference name="show-splash-screen-spinner" value="false" />
     <preference name="orientation" value="portrait" /> 
     <preference name="EnableViewportScale" value="true" />
 
