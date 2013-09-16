@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--
+Date: 2013/09/16
+Programmer: Bill Herman (wrherman@comcast.net)
+Description: calcuation page for steel piles
+-->
 <html lang="en">
 <head>
 <script>
@@ -10,24 +15,31 @@ var result2;
 
 function myCalculate()
 {
+
+// pull input values from HTML
 side = document.getElementById('side').value;
 length = document.getElementById('length').value;
 
+// check for blanks, otherwise calculate values
 if (side == "" || length == ""){
 	alert("Some inputs are blank");
 	}
 else
 	{
+	// calculate two output values
 	result1 = 0.92 * side * side;
 	result2 = result1 * length;
 	result1 = result1.toFixed(2);
 	result2 = result2.toFixed(2);
+
+	// set output fields 
 	document.getElementById("weight1").innerHTML=result1;
 	document.getElementById("weight2").innerHTML=result2;
 	}
 }
 
 function myClear(){
+	// clear all input and output fields
 	document.getElementById('side').value="";
 	document.getElementById('length').value="";
 	document.getElementById("weight1").innerHTML="";
@@ -53,33 +65,41 @@ function myClear(){
 <td class="highlight" colspan=3>APE Pile Calculator</td>
 </tr>
 
+<!-- main title -->
 <tr height="10%">
 <td width="33%" align="center"><a class="unlight" href="index.html">Steel</a></td>
 <td width="33%" class="highlight" align="center">Concrete</td>
 <td width="33%" align="center"><a class="unlight" href="map1.html">Locations</a></td>
 </tr>
 
+<!-- second title -->
 <tr height="10%">
 <td width="33%" align="center"><a class="unlight" href="concrete1.html">Round</a></td>
 <td width="33%" align="center"><a class="unlight" href="concrete2.html">Square</a></td>
 <td width="33%" class="highlight" align="center">Octagonal</td>
 </tr>
 
+<!-- subtitle -->
 <tr>
 <td colspan="3" align="center" class="unlight">APE Pile Calculator - Concrete piles</td>
 </tr>
 
+<!-- input fields -->
 <tr><td colspan="2">One side in inches:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="side" value="" onkeydown="ForceNumericInput(this, true, false)"></td></tr>
 <tr><td colspan="2">Length in feet:</td><td width="20%" align="center"><input size="10" class="input" type="number" id="length" value="" onkeydown="ForceNumericInput(this, true, false)"></td></tr>
+
+<!-- output fields -->
 <tr><td colspan="2">Weight / foot in lbs.</td><td width="20%"><p id="weight1"></p></td></tr>
 <tr><td colspan="2">Pile total weight in lbs.</td><td width="20%"><p id="weight2"></p></td></tr>
+
+<!-- buttons -->
 <tr><td colspan="2" align="center"><button class="buttons" onclick="myCalculate()">Calculate</button></td><td width="20%" align="center"><button class="buttons" onclick="myClear()">Clear</button></td></tr>
+
+<!-- footer image -->
 <tr><td colspan="3" align="center" height="100" width="100"><img src="images/ape_gorilla_with_ape_small_black.png"></td></tr>
 </table>
 
 </body>
-
-
 
 </html>
 
